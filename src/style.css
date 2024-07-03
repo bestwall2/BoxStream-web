@@ -732,7 +732,7 @@ a {
     opacity: 1;
 }
 #watchlist-button:hover {
-    background-color: rgba(255, 76, 76, 0.9);
+    background-color: rgba(64, 136, 248, 0.9);
 }
 .watchlist-content {
     position: absolute;
