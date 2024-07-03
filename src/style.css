@@ -120,7 +120,7 @@ a {
 }
 #header-tele {
     width: 95px;
-    transition: all 150ms ease;
+    transition: all 100ms ease;
     margin-top: 10px;
 }
 #header-logo:hover {
