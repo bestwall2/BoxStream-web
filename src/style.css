@@ -121,7 +121,7 @@ a {
 #header-tele {
     width: 40px;
     transition: all 150ms ease;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 #header-logo:hover {
     opacity: 0.6;
@@ -1527,8 +1527,8 @@ a {
     }
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 10px;
-        width: 10px;
+        height: 9px;
+        width: 9px;
         margin-right: 0px;
     }
     #suggested-title {
