@@ -525,10 +525,19 @@ a {
     gap: 25px;
 }
 #AndroidApp {
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    justify-content: space-between;
+    align-items: center;
     margin-left: 10px;
     font-size: 1.1rem;
     font-weight: bold;
     gap: 25px;
+}
+
+#AndroidApp > * {
+    margin-top: 8px; /* Space above each element */
+    margin-bottom: 8px; /* Space below each element */
 }
 
 #welcome {
