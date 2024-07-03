@@ -539,6 +539,12 @@ a {
     margin-top: 8px; /* Space above each element */
     margin-bottom: 8px; /* Space below each element */
 }
+#AndroidApp .p{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bold;
+    gap: 3px;
+}
 
 #welcome {
     display: flex;
