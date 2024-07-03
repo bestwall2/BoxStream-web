@@ -66,7 +66,7 @@ export default function Header() {
                     <a href="https://t.me/box_stream">
                         <img
                             src="/images/telegram.svg"
-                            id="header-logo"
+                            id="header-tele"
                             alt="Telegram Channel"
                         />
                     </a>
