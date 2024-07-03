@@ -1,10 +1,10 @@
 * {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     color: white;
 }
 body {
     margin: 0;
-    background-color: #181A20;
+    background-color: #181a20;
 }
 p {
     margin: 0;
@@ -16,7 +16,8 @@ p {
 a {
     text-decoration: none;
 }
-.loader, .error {
+.loader,
+.error {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -34,20 +35,20 @@ a {
     font-weight: bold;
 }
 @keyframes loaderimg {
-    0%  {
-        opacity: .5;
+    0% {
+        opacity: 0.5;
     }
-    25%  {
-        opacity: .7
+    25% {
+        opacity: 0.7;
     }
-    50%  {
-        opacity: .9
+    50% {
+        opacity: 0.9;
     }
     75% {
-        opacity: .7
+        opacity: 0.7;
     }
     100% {
-        opacity: .5
+        opacity: 0.5;
     }
 }
 #swiper {
@@ -55,9 +56,7 @@ a {
     height: 100vh;
 }
 
-
 /* NOTFOUND */
-
 
 #notfound {
     width: 100vw;
@@ -82,9 +81,7 @@ a {
     opacity: 1;
 }
 
-
 /* HEADER */
-
 
 #header {
     display: flex;
@@ -93,7 +90,11 @@ a {
     width: 100vw;
     z-index: 1111;
     transition: all 0.3s ease;
-    background: linear-gradient(to bottom, rgba(15, 15, 15, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 15, 15, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
 #header.with-filter {
     backdrop-filter: blur(3px);
@@ -136,8 +137,12 @@ a {
     border: none;
     outline: none;
     transition: all ease 0.3s;
-    background-color: rgba(255,255,255,.2);
-    box-shadow: 1px 1px 3px #0e0e0e, -1px -1px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:
+        1px 1px 3px #0e0e0e,
+        -1px -1px 3px rgb(95 94 94 / 25%),
+        inset 0px 0px 0px #0e0e0e,
+        inset 0px -0px 0px #5f5e5e;
     border-radius: 50px;
     cursor: text;
 }
@@ -153,10 +158,14 @@ a {
 #install-button {
     width: 42px;
     height: 42px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 1px 3px #0e0e0e, -1px -1px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    box-shadow:
+        1px 1px 3px #0e0e0e,
+        -1px -1px 3px rgb(95 94 94 / 25%),
+        inset 0px 0px 0px #0e0e0e,
+        inset 0px -0px 0px #5f5e5e;
 }
 #install-button:hover {
     scale: 0.95;
@@ -164,10 +173,14 @@ a {
 #settings {
     width: 42px;
     height: 42px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 1px 3px #0e0e0e, -1px -1px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    box-shadow:
+        1px 1px 3px #0e0e0e,
+        -1px -1px 3px rgb(95 94 94 / 25%),
+        inset 0px 0px 0px #0e0e0e,
+        inset 0px -0px 0px #5f5e5e;
     transition: all 150ms ease;
 }
 #settings:hover {
@@ -175,9 +188,7 @@ a {
     rotate: 60deg;
 }
 
-
 /* HERO */
-
 
 #hero {
     display: flex;
@@ -222,7 +233,7 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -230,7 +241,7 @@ a {
     transition: all 150ms ease;
 }
 #hero-button:hover {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 #hero-image-container {
     position: absolute;
@@ -262,20 +273,23 @@ a {
     gap: 10px;
 }
 
-
 /* HOME */
-
 
 #home {
     z-index: 1;
     position: relative;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgb(15, 11, 9) 50%, rgba(0, 0, 0, 1) 97%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgb(15, 11, 9) 50%,
+        rgba(0, 0, 0, 1) 97%,
+        rgba(0, 0, 0, 0) 100%
+    );
     top: -20vh;
     margin-bottom: -20vh;
 }
 
 /* DISCOVER */
-
 
 #discover {
     display: flex;
@@ -291,7 +305,7 @@ a {
     font-size: 2rem;
     margin-left: 0.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.2)
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 #discover-card {
     display: flex;
@@ -304,7 +318,8 @@ a {
     height: 100%;
     margin-right: 15px;
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: white !important;
     padding: 0 10px !important;
     height: 100% !important;
@@ -339,8 +354,8 @@ a {
     text-align: center;
     font-weight: 600;
     transition: all 200ms ease;
-    box-shadow: inset 0px 5px 20px #181A20;
-    background: linear-gradient(to top, #181A20, transparent);
+    box-shadow: inset 0px 5px 20px #181a20;
+    background: linear-gradient(to top, #181a20, transparent);
     border-radius: 6px;
     z-index: 10;
 }
@@ -378,7 +393,7 @@ a {
     transition: all 200ms ease;
 }
 #card-rating {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 5px 2px 5px;
     border-radius: 6px 0 0 6px;
     position: absolute;
@@ -388,7 +403,7 @@ a {
 #card-rating > p {
     font-weight: 400;
 }
-.card:hover img{
+.card:hover img {
     scale: 1.05;
 }
 .card:hover .card-content {
@@ -407,9 +422,7 @@ a {
     align-items: center;
 }
 
-
 /* SERVICE */
-
 
 #service {
     display: flex;
@@ -462,7 +475,7 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: 1.1rem;
     font-weight: bold;
     border: 0;
@@ -470,31 +483,33 @@ a {
     cursor: pointer;
 }
 #service-button:disabled {
-    cursor:unset;
-    background-color: rgba(255,255,255,0.15);
+    cursor: unset;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 #service-span {
     display: flex;
     align-items: center;
     padding: 8px 16px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 #service-button:hover:enabled {
-    background-color: rgba(255,255,255,0.15)
+    background-color: rgba(255, 255, 255, 0.15);
 }
 #service-button:hover:enabled i {
     color: #ff4f4f;
 }
 
-
 /* FOOTER */
-
 
 #footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to top, rgb(26, 11, 11) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+        to top,
+        rgb(26, 11, 11) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
     padding: 2rem 3rem 1.25rem 3rem;
 }
 #footer-left {
@@ -517,6 +532,12 @@ a {
     font-size: 1.1rem;
     font-weight: bold;
     gap: 15px;
+}
+#AndroidApp .p {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bold;
+    gap: 3px;
 }
 #welcome {
     display: flex;
@@ -547,9 +568,7 @@ a {
     opacity: 1;
 }
 
-
 /* SEARCH */
-
 
 #search-section {
     min-height: 100vh;
@@ -576,9 +595,7 @@ a {
     margin-bottom: 1.5rem;
 }
 
-
 /* DMCA */
-
 
 #dmca-section {
     display: flex;
@@ -597,9 +614,7 @@ a {
     gap: 50px;
 }
 
-
 /* SETTINGS */
-
 
 #settings-page {
     display: flex;
@@ -612,7 +627,7 @@ a {
 #settings-main {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin: 0 5rem;
     padding: 0 0.5rem 0.5rem 0.5rem;
@@ -636,7 +651,7 @@ a {
     gap: 30px;
 }
 #watchlist-clear {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 0;
     border-radius: 8px;
     width: 70px;
@@ -645,7 +660,7 @@ a {
     cursor: pointer;
 }
 #watchlist-clear:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 #watchlist-clear:active {
     scale: 0.95;
@@ -701,7 +716,7 @@ a {
     height: 100%;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, #181A20, transparent);
+    background: linear-gradient(to top, #181a20, transparent);
 }
 .widecard-section {
     padding: 0.5rem;
@@ -725,7 +740,7 @@ a {
     height: 35px;
     top: 8px;
     right: 8px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 0;
     padding: 0;
     border-radius: 8px;
@@ -756,8 +771,8 @@ a {
     text-align: center;
     font-weight: 600;
     transition: all 200ms ease;
-    box-shadow: inset 0px 5px 20px #181A20;
-    background: linear-gradient(to top, #181A20, transparent);
+    box-shadow: inset 0px 5px 20px #181a20;
+    background: linear-gradient(to top, #181a20, transparent);
     border-radius: 6px;
     z-index: 10;
 }
@@ -790,9 +805,7 @@ a {
     scale: 1.05;
 }
 
-
 /* PLAYER */
-
 
 #iframe-container {
     display: flex;
@@ -823,23 +836,21 @@ a {
     padding: 5px 20px;
     margin: 2px;
     font-size: 1.3rem;
-    background-color: rgba(0,0,0,0.8);
-    border: 2px rgba(255,255,255,0.2) solid;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px rgba(255, 255, 255, 0.2) solid;
     border-radius: 8px;
     cursor: pointer;
     pointer-events: all;
 }
 #server-select option {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 #player-button-grid {
     display: flex;
     align-items: center;
 }
 
-
 /* SCROLLBAR */
-
 
 ::-webkit-scrollbar {
     width: 2px;
@@ -852,7 +863,7 @@ a {
     background-clip: padding-box;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     border: 0;
 }
 
@@ -860,9 +871,7 @@ a {
     background: transparent;
 }
 
-
 /* INFO */
-
 
 #info-container {
     display: flex;
@@ -888,7 +897,7 @@ a {
     width: 300px;
     border-radius: 12px;
     z-index: 12;
-    box-shadow: 5px 5px 20px #181A20;
+    box-shadow: 5px 5px 20px #181a20;
 }
 #info-title {
     max-width: 90vw;
@@ -902,7 +911,7 @@ a {
     font-weight: 600;
 }
 #info-content-rating {
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     padding: 1px 5px;
 }
@@ -923,7 +932,7 @@ a {
     border-radius: 5px;
     background-color: rgba(109, 0, 0, 0.6);
     color: rgb(255, 120, 120);
-    box-shadow: 1px 2px 20px #181A20;
+    box-shadow: 1px 2px 20px #181a20;
 }
 #info-backdrop {
     z-index: -2;
@@ -954,7 +963,7 @@ a {
     width: 120px;
     height: 50px;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -962,7 +971,7 @@ a {
     transition: all 150ms ease;
 }
 #play-button:hover {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255, 255, 255, 0.4);
     scale: 1.05;
 }
 #info-button-grid {
@@ -978,11 +987,11 @@ a {
     font-weight: 600;
 }
 #info-description {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1.1rem;
 }
 #suggested-container {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1027,7 +1036,7 @@ a {
     max-height: 50vh;
     margin: 1rem 20rem 2rem 20rem;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
     border-radius: 8px;
     padding: 0.5rem;
@@ -1059,7 +1068,7 @@ a {
     width: 120px;
     height: 50px;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -1067,13 +1076,11 @@ a {
     transition: all 150ms ease;
 }
 #watch-button:hover {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255, 255, 255, 0.4);
     scale: 1.05;
 }
 
-
 /* MOBILE */
-
 
 @media (max-height: 600px) {
     #hero-title-image {
@@ -1132,7 +1139,8 @@ a {
     .episode-box {
         flex-direction: row !important;
     }
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none !important;
     }
     #discover-slider {
@@ -1240,9 +1248,14 @@ a {
         opacity: 1;
     }
     .card-content {
-        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 70%
+        );
     }
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none !important;
     }
     .card img {
@@ -1478,7 +1491,7 @@ a {
         width: 60vw;
     }
     #episode-desc {
-        font-size: .875rem;
+        font-size: 0.875rem;
     }
     #info-description {
         font-size: 0.875rem;
@@ -1492,7 +1505,7 @@ a {
         justify-content: center;
     }
     #header-logo {
-        content: url('/images/icon.svg');
+        content: url("/images/icon.svg");
         height: 45px;
         width: 45px;
         margin-right: 10px;
@@ -1529,29 +1542,33 @@ a {
 }
 /* Download Button Desing */
 .cssbuttons-io-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(
+        0deg,
+        rgba(77, 54, 208, 1) 0%,
+        rgba(132, 116, 254, 1) 100%
+    );
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
 }
 
 .cssbuttons-io-button svg {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
 .cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+    box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
 }
 
 .cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+    box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
 }
