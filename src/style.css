@@ -1521,15 +1521,15 @@ a {
     }
     #header-logo {
         content: url("/images/icon.svg");
-        height: 55px;
-        width: 45px;
+        height: 60px;
+        width: 60px;
         margin-right: 10px;
     }
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 25px;
-        width: 25px;
-        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
     }
     #suggested-title {
         font-size: 1.7rem;
