@@ -56,13 +56,6 @@ export default function Header() {
             }`}>
             <div id="header-section">
                 <div id="header-left">
-                    <Link to="/">
-                        <img
-                            src="/images/logo.svg"
-                            id="header-logo"
-                            alt="Logo"
-                        />
-                    </Link>
                     <a href="https://t.me/box_stream">
                         <img
                             src="/images/telegram.svg"
@@ -70,6 +63,13 @@ export default function Header() {
                             alt="Telegram Channel"
                         />
                     </a>
+                    <Link to="/">
+                        <img
+                            src="/images/logo.svg"
+                            id="header-logo"
+                            alt="Logo"
+                        />
+                    </Link>
                 </div>
                 <div id="header-right">
                     <InstallButton />
