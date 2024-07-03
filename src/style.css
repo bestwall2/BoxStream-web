@@ -114,12 +114,13 @@ a {
     gap: 15px;
 }
 #header-logo {
-    width: 135px;
+    width: 130px;
     transition: all 150ms ease;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 #header-tele {
-    width: 20px;
+    width: 90px;
+    height: 90px;
     transition: all 150ms ease;
     margin-top: 0px;
 }
