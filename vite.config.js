@@ -12,10 +12,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'zmov',
-        short_name: 'zmov',
-        description: 'Your movie app',
-        theme_color: '#000000',
+        name: 'BoxStream',
+        short_name: 'BoxStream',
+        description: 'Best Free Web Application for watching movies and Series',
+        theme_color: '#181A20',
         icons: [
           {
             src: '/pwa-192x192.png',
