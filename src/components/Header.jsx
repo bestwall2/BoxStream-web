@@ -52,7 +52,7 @@ export default function Header() {
       <div id="header-section">
         <div id="header-left">
           <Link to="/">
-            <img src="/images/logo.svg" id="header-logo" alt="Logo" />
+            <img src="/images/logo.svg" id="header-logo" alt="Logo" style={{width: "90px"}} />
           </Link>
         </div>
         <div id="header-right">
