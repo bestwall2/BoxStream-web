@@ -114,14 +114,14 @@ a {
     gap: 15px;
 }
 #header-logo {
-    width: 140px;
+    width: 135px;
     transition: all 150ms ease;
     margin-top: 5px;
 }
 #header-tele {
-    width: 40px;
+    width: 120px;
     transition: all 150ms ease;
-    margin-top: 2px;
+    margin-top: 0px;
 }
 #header-logo:hover {
     opacity: 0.6;
