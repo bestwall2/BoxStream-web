@@ -509,6 +509,13 @@ a {
     margin-left: 10px;
     gap: 25px;
 }
+#AndroidApp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    gap: 25px;
+}
 #welcome {
     display: flex;
     font-size: 1.1rem;
