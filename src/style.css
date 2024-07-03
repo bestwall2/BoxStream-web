@@ -525,9 +525,6 @@ a {
     gap: 25px;
 }
 #AndroidApp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: 10px;
     font-size: 1.1rem;
     font-weight: bold;
