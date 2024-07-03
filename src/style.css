@@ -118,20 +118,23 @@ a {
     transition: all 150ms ease;
     margin-top: 8px;
 }
+/*
 #header-tele {
     width: 90px;
     height: 90px;
     transition: all 150ms ease;
     margin-top: 0px;
-}
+}*/
+
 #header-logo:hover {
     opacity: 0.6;
     scale: 0.97;
 }
+/*
 #header-tele:hover {
     opacity: 0.6;
     scale: 0.97;
-}
+}*/
 #search {
     position: relative;
     transition: all 150ms ease;
@@ -1526,12 +1529,13 @@ a {
         width: 80px;
         margin-right: 10px;
     }
+    /*
     #header-tele {
         content: url("/images/telegram.svg");
         height: 9px;
         width: 9px;
         margin-right: 0px;
-    }
+    }*/
     #suggested-title {
         font-size: 1.7rem;
     }
@@ -1561,9 +1565,10 @@ a {
     #header-logo {
         margin-right: 2vw;
     }
+    /*
     #header-tele {
         margin-right: 2vw;
-    }
+    }*/
 }
 /* Download Button Desing */
 .cssbuttons-io-button {
