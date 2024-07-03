@@ -37,7 +37,7 @@ export default function Player() {
             }
         }
         if (selectedServer === 'PRO') {
-            url += '?&autoplay=1&theme=ff2222';
+            url += '?&autoplay=1&theme=ff4088f8';
         }
         return url;
     };
