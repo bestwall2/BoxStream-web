@@ -63,6 +63,13 @@ export default function Header() {
                             alt="Logo"
                         />
                     </Link>
+                    <Link to="/">
+                        <img
+                            src="/images/logo.svg"
+                            id="header-logo"
+                            alt="Logo"
+                        />
+                    </Link>
                 </div>
                 <div id="header-right">
                     <InstallButton />
