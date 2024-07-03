@@ -15,9 +15,10 @@ export default function Footer() {
                         />
                     </div>
                 </div>
+                
                 <div id="AndroidApp">
                     <p>Available On Android Too :</p>
-                    <a href="https://example.com">
+                    <a href="https://bestwall2.github.io/BOXSTREAM/">
                         <button class="cssbuttons-io-button">
                             <svg
                                 height="24"
