@@ -118,7 +118,16 @@ a {
     transition: all 150ms ease;
     margin-top: 5px;
 }
+#header-tele {
+    width: 100px;
+    transition: all 150ms ease;
+    margin-top: 5px;
+}
 #header-logo:hover {
+    opacity: 0.6;
+    scale: 0.97;
+}
+#header-tele:hover {
     opacity: 0.6;
     scale: 0.97;
 }
@@ -538,7 +547,7 @@ a {
 #AndroidApp > * {
     margin-bottom: 8px; /* Space below each element */
 }
-#AndroidApp .p{
+#AndroidApp .p {
     display: flex;
     font-size: 1.1rem;
     font-weight: bold;
@@ -1516,6 +1525,12 @@ a {
         width: 45px;
         margin-right: 10px;
     }
+    #header-tele {
+        content: url("/images/telegram.svg");
+        height: 45px;
+        width: 45px;
+        margin-right: 10px;
+    }
     #suggested-title {
         font-size: 1.7rem;
     }
@@ -1543,6 +1558,9 @@ a {
         gap: 3vw;
     }
     #header-logo {
+        margin-right: 2vw;
+    }
+    #header-tele {
         margin-right: 2vw;
     }
 }
