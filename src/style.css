@@ -119,7 +119,7 @@ a {
     margin-top: 5px;
 }
 #header-tele {
-    width: 95px;
+    width: 100px;
     transition: all 100ms ease;
     margin-top: 10px;
 }
@@ -1561,7 +1561,7 @@ a {
         margin-right: 2vw;
     }
     #header-tele {
-        margin-right: 0vw;
+        margin-right: 2vw;
     }
 }
 /* Download Button Desing */
