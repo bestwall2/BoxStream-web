@@ -14,6 +14,7 @@ export default function Footer() {
                             alt="Logo"
                         />
                     </div>
+                    <br></br>
                     <p>Available On Android Too :</p>
                     <button class="cssbuttons-io-button">
                         <svg
