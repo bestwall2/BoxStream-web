@@ -533,12 +533,7 @@ a {
     font-weight: bold;
     gap: 25px;
 }
-#AndroidApp .p {
-    display: flex;
-    font-size: 1.1rem;
-    font-weight: bold;
-    gap: 3px;
-}
+
 #welcome {
     display: flex;
     font-size: 1.1rem;
