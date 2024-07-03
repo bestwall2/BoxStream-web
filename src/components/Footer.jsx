@@ -18,6 +18,9 @@ export default function Footer() {
                 <div id="AndroidApp">
                     <p>Available On Android Too :</p>
                     <button class="cssbuttons-io-button">
+                      <a target="_blank"
+                    href="https://bestwall2.github.io/BOXSTREAM/"
+                    rel="noopener noreferrer" </a>
                         <svg
                             height="24"
                             width="24"
@@ -46,7 +49,7 @@ export default function Footer() {
                 </Link>
                 <a
                     target="_blank"
-                    href="https://bestwall2.github.io/BOXSTREAM/"
+                    href="https://github.com/bestwall2"
                     rel="noopener noreferrer">
                     <i
                         className="fa-brands fa-github"
