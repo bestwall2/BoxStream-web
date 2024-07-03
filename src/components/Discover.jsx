@@ -44,16 +44,7 @@ export default function Discover(props) {
                     ))}
                 </Swiper>
             </div>
-            <div class="alert alert-primary">
-                <div class="icon__wrapper">
-                    <span class="mdi mdi-alert-outline"></span>
-                </div>
-                <p>
-                    You’ve assigned Owner of <a href="#">Button Component.</a>
-                </p>
-                <span class="mdi mdi-open-in-new open"></span>
-                <span class="mdi mdi-close close"></span>
-            </div>
+            
         </div>
     );
 }
