@@ -53,15 +53,7 @@ export default function Home() {
                         }}
                     />
                 </div>
-                <md-dialog>
-                    <div slot="headline">Dialog title</div>
-                    <form slot="content" id="form-id" method="dialog">
-                        A simple dialog with free-form content.
-                    </form>
-                    <div slot="actions">
-                        <md-text-button form="form-id">Ok</md-text-button>
-                    </div>
-                </md-dialog>
+
                 <div id="discover">
                     <Discover
                         url={`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&include_adult=false`}
