@@ -1,7 +1,7 @@
 {
-    "name": "zmov",
-    "short_name": "zmov",
-    "description": "Your movie app",
+    "name": "BoxStream",
+    "short_name": "BoxStream",
+    "description": "Best Free Web Application for watching movies and Series",
     "icons": [
       {
         "src": "/pwa-192x192.png",
@@ -22,7 +22,7 @@
     ],
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#000000"
+    "theme_color": "#181A20",
+    "background_color": "#181A20"
   }
   
