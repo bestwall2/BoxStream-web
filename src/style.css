@@ -121,7 +121,7 @@ a {
 #header-tele {
     width: 85px;
     transition: all 150ms ease;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 #header-logo:hover {
     opacity: 0.6;
