@@ -120,8 +120,8 @@ a {
 }
 
 #header-tele {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     transition: all 150ms ease;
     margin-top: 0px;
 }
@@ -1532,8 +1532,8 @@ a {
     
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 9px;
-        width: 9px;
+        height: 90px;
+        width: 90px;
         margin-right: 0px;
     }
     #suggested-title {
