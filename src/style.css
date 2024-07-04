@@ -1530,14 +1530,14 @@ a {
         content: url("/images/icon.svg");
         height: 50px;
         width: 50px;
-        margin-right: 5px;
+        margin-right: 3px;
     }
 
     #header-tele {
         content: url("/images/telegram.svg");
         width: 33px;
         height: auto;
-        margin-top: 3px;
+        margin-top: 5px;
         margin-right: 0px; /* Match the margin-right of #header-logo for consistency */
         object-fit: contain; /* Ensure the aspect ratio is maintained */
     }
