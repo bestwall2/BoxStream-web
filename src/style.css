@@ -1532,15 +1532,14 @@ a {
 
     #header-tele {
         content: url("/images/telegram.svg");
-        
         width: 29px;
-        margin-right: 0px;
+        margin-right: 10px;
     }
     #suggested-title {
         font-size: 1.7rem;
     }
     #header-section {
-        margin: 0.1rem 1rem;
+        margin: 0.2rem 1rem;
     }
     #header.show {
         top: -71px;
