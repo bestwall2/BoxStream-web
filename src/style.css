@@ -1535,9 +1535,10 @@ a {
 
     #header-tele {
         content: url("/images/telegram.svg");
-        width: 35px;
+        width: 33px;
         height: auto;
-        margin-right: 3px; /* Match the margin-right of #header-logo for consistency */
+        margin-top: 3px;
+        margin-right: 0px; /* Match the margin-right of #header-logo for consistency */
         object-fit: contain; /* Ensure the aspect ratio is maintained */
     }
     #suggested-title {
