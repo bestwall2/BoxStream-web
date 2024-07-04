@@ -1525,15 +1525,15 @@ a {
     }
     #header-logo {
         content: url("/images/icon.svg");
-        height: 80px;
-        width: 80px;
+        height: 50px;
+        width: 50px;
         margin-right: 10px;
     }
     
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 90px;
-        width: 90px;
+        height: 45px;
+        width: 45px;
         margin-right: 0px;
     }
     #suggested-title {
