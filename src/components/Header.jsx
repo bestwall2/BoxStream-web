@@ -72,6 +72,13 @@ export default function Header() {
                     </Link>
                 </div>
                 <div id="header-right">
+                    <a href="https://t.me/box_stream">
+                        <img
+                            src="/images/telegram.svg"
+                            id="header-tele"
+                            alt="Telegram Channel"
+                        />
+                    </a>
                     <InstallButton />
                     <div id="search">
                         <input
