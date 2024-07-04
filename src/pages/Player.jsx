@@ -21,7 +21,7 @@ export default function Player() {
         XYZ: `https://vidsrc.xyz/embed/${type}/${id}`,
         TWO: `https://www.2embed.cc/embed${type === "tv" ? "tv" : ""}/${id}`,
         SS: `https://player.smashy.stream/${type}/${id}`,
-        BF: `https://www.braflix.ru/${type}/${id}/`
+        BF: `https://www.braflix.ru/${type}/${id}`
     };
 
     const getServerURL = () => {
