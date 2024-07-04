@@ -1532,8 +1532,8 @@ a {
     
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 43px;
-        width: 43px;
+        height: 40px;
+        width: 40px;
         margin-right: 0px;
     }
     #suggested-title {
