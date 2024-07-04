@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useParams, Link, useLocation } from "react-router-dom";
 
 export default function Player() {
     const { type, id } = useParams();
@@ -8,7 +8,7 @@ export default function Player() {
     const [totalSeasons, setTotalSeasons] = useState(0);
     const [season, setSeason] = useState(null);
     const [episode, setEpisode] = useState(null);
-    const [selectedServer, setSelectedServer] = useState('PRO');
+    const [selectedServer, setSelectedServer] = useState("PRO");
 
     const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -19,31 +19,34 @@ export default function Player() {
         CLUB: `https://moviesapi.club/${type}/${id}`,
         BINGE: `https://showbox.justbinge.lol/embed/${id}`,
         XYZ: `https://vidsrc.xyz/embed/${type}/${id}`,
-        TWO: `https://www.2embed.cc/embed${type === 'tv' ? 'tv' : ''}/${id}`,
+        TWO: `https://www.2embed.cc/embed${type === "tv" ? "tv" : ""}/${id}`,
         SS: `https://player.smashy.stream/${type}/${id}`,
+        BF: `https://www.braflix.ru/${type}/${id}/`
     };
 
     const getServerURL = () => {
         let url = serverURLs[selectedServer];
-        if (type === 'tv' && season && episode) {
-            if (selectedServer === 'MULTI' || selectedServer === 'TWO') {
+        if (type === "tv" && season && episode) {
+            if (selectedServer === "MULTI" || selectedServer === "TWO") {
                 url += `&s=${season}&e=${episode}`;
-            } else if (selectedServer === 'BINGE' || selectedServer === 'SS') {
+            } else if (selectedServer === "BINGE" || selectedServer === "SS") {
                 url += `?s=${season}&e=${episode}`;
-            } else if (selectedServer === 'CLUB') {
+            } else if (selectedServer === "CLUB") {
                 url += `-${season}-${episode}`;
+            } else if (selectedServer === "BF") {
+                url += `/${season}/${episode}?play=true`;
             } else {
                 url += `/${season}/${episode}`;
             }
         }
-        if (selectedServer === 'PRO') {
-            url += '?&autoplay=1&theme=ff4088f8';
+        if (selectedServer === "PRO") {
+            url += "?&autoplay=1&theme=ff4088f8";
         }
         return url;
     };
 
     useEffect(() => {
-        const pathSegments = location.pathname.split('/');
+        const pathSegments = location.pathname.split("/");
         const seasonParam = pathSegments[4];
         const episodeParam = pathSegments[5];
 
@@ -52,14 +55,18 @@ export default function Player() {
 
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}`);
+                const response = await fetch(
+                    `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}`
+                );
                 const data = await response.json();
 
-                if (type === 'tv') {
+                if (type === "tv") {
                     setTotalSeasons(data.number_of_seasons);
 
                     if (seasonParam && episodeParam) {
-                        const seasonResponse = await fetch(`https://api.themoviedb.org/3/${type}/${id}/season/${seasonParam}?api_key=${apiKey}`);
+                        const seasonResponse = await fetch(
+                            `https://api.themoviedb.org/3/${type}/${id}/season/${seasonParam}?api_key=${apiKey}`
+                        );
                         const seasonData = await seasonResponse.json();
                         setTotalEpisodes(seasonData.episodes.length);
 
@@ -81,19 +88,23 @@ export default function Player() {
                     updateContinueWatching(continueWatchingItem);
                 }
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error("Error fetching data:", error);
             }
         };
 
         fetchData();
     }, [id, type, location.pathname, apiKey]);
 
-    const updateContinueWatching = (item) => {
+    const updateContinueWatching = item => {
         let continueWatching = [];
         try {
-            continueWatching = JSON.parse(localStorage.getItem('continueWatching')) || [];
+            continueWatching =
+                JSON.parse(localStorage.getItem("continueWatching")) || [];
         } catch (e) {
-            console.error('Error parsing continueWatching from localStorage:', e);
+            console.error(
+                "Error parsing continueWatching from localStorage:",
+                e
+            );
             continueWatching = [];
         }
 
@@ -101,46 +112,60 @@ export default function Player() {
             continueWatching = [];
         }
 
-        continueWatching = continueWatching.filter(watch => watch.id !== item.id);
+        continueWatching = continueWatching.filter(
+            watch => watch.id !== item.id
+        );
         continueWatching.unshift(item);
 
         if (continueWatching.length > 10) {
             continueWatching = continueWatching.slice(0, 10);
         }
 
-        localStorage.setItem('continueWatching', JSON.stringify(continueWatching));
+        localStorage.setItem(
+            "continueWatching",
+            JSON.stringify(continueWatching)
+        );
     };
 
     const nextEpisode = episode ? episode + 1 : null;
     const nextSeason = season ? season + 1 : null;
 
-    const nextEpisodeLink = episode && season
-        ? nextEpisode > totalEpisodes
-            ? nextSeason > totalSeasons
-                ? `/info/${type}/${id}`
-                : `/watch/${type}/${id}/${nextSeason}/1`
-            : `/watch/${type}/${id}/${season}/${nextEpisode}`
-        : `/info/${type}/${id}`;
+    const nextEpisodeLink =
+        episode && season
+            ? nextEpisode > totalEpisodes
+                ? nextSeason > totalSeasons
+                    ? `/info/${type}/${id}`
+                    : `/watch/${type}/${id}/${nextSeason}/1`
+                : `/watch/${type}/${id}/${season}/${nextEpisode}`
+            : `/info/${type}/${id}`;
 
     return (
         <>
             <div id="iframe-container">
-                <iframe 
-                    src={getServerURL()} 
+                <iframe
+                    src={getServerURL()}
                     allowFullScreen={true}
-                    style={{ width: "100%", height: "100%", border: '0' }}
-                ></iframe>
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        border: "0"
+                    }}></iframe>
             </div>
             <div id="button-grid">
-                <Link to={`/info/${type}/${id}`} id="player-button"><i className="fa-solid fa-arrow-left" alt="Back" style={{fontSize: "26px"}} /></Link>
-                
+                <Link to={`/info/${type}/${id}`} id="player-button">
+                    <i
+                        className="fa-solid fa-arrow-left"
+                        alt="Back"
+                        style={{ fontSize: "26px" }}
+                    />
+                </Link>
+
                 <div id="player-button-grid">
-                    <select 
-                        name="servers" 
-                        value={selectedServer} 
-                        onChange={(e) => setSelectedServer(e.target.value)} 
-                        id="server-select"
-                    >
+                    <select
+                        name="servers"
+                        value={selectedServer}
+                        onChange={e => setSelectedServer(e.target.value)}
+                        id="server-select">
                         <option value="PRO">PRO</option>
                         <option value="TO">TO</option>
                         <option value="MULTI">MULTI</option>
@@ -149,9 +174,16 @@ export default function Player() {
                         <option value="XYZ">XYZ</option>
                         <option value="TWO">2EMBED</option>
                         <option value="SS">SMASHY</option>
+                        <option value="BF">BFlix</option>
                     </select>
-                    {type === 'tv' && season && episode && (
-                        <Link to={nextEpisodeLink} id="player-button"><i className="fa-solid fa-arrow-right" style={{fontSize: "26px"}} alt="Next" /></Link>
+                    {type === "tv" && season && episode && (
+                        <Link to={nextEpisodeLink} id="player-button">
+                            <i
+                                className="fa-solid fa-arrow-right"
+                                style={{ fontSize: "26px" }}
+                                alt="Next"
+                            />
+                        </Link>
                     )}
                 </div>
             </div>
