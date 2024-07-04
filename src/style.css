@@ -114,14 +114,15 @@ a {
     gap: 15px;
 }
 #header-logo {
-    width: 125px;
+    width: 140px;
+    height: 140px;
     transition: all 150ms ease;
     margin-top: 8px;
 }
 
 #header-tele {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     transition: all 150ms ease;
     margin-top: 0px;
 }
@@ -1529,11 +1530,12 @@ a {
         width: 50px;
         margin-right: 10px;
     }
-    
+
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 38px;
-        width: 38px;
+        height: 30px;
+        width: 30px;
+        margin-top: 0px;
         margin-right: 0px;
     }
     #suggested-title {
@@ -1565,8 +1567,9 @@ a {
     #header-logo {
         margin-right: 2vw;
     }
-    
+
     #header-tele {
+        margin-top: 0px;
         margin-right: 1vw;
     }
 }
