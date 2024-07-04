@@ -1537,7 +1537,7 @@ a {
         content: url("/images/telegram.svg");
         width: 35px;
         height: auto;
-        margin-right: 5px; /* Match the margin-right of #header-logo for consistency */
+        margin-right: 3px; /* Match the margin-right of #header-logo for consistency */
         object-fit: contain; /* Ensure the aspect ratio is maintained */
     }
     #suggested-title {
