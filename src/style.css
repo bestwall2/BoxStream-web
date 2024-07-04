@@ -113,6 +113,10 @@ a {
     display: flex;
     gap: 15px;
 }
+#header-left {
+    display: flex;
+    gap: 15px;
+}
 #header-logo {
     width: 140px;
     height: 140px;
@@ -123,7 +127,7 @@ a {
 #header-tele {
     width: 38px;
     transition: all 150ms ease;
-    margin-top: 0px;
+    margin-top: 8px;
 }
 
 #header-logo:hover {
@@ -1533,13 +1537,14 @@ a {
     #header-tele {
         content: url("/images/telegram.svg");
         width: 29px;
+        height: 29px;
         margin-right: 10px;
     }
     #suggested-title {
         font-size: 1.7rem;
     }
     #header-section {
-        margin: 0.2rem 1rem;
+        margin: 0.1rem 1rem;
     }
     #header.show {
         top: -71px;
