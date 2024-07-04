@@ -126,8 +126,6 @@ a {
 
 #header-tele {
     width: 38px;
-    transition: all 150ms ease;
-    margin-top: 8px;
 }
 
 #header-logo:hover {
