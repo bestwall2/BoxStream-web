@@ -121,8 +121,7 @@ a {
 }
 
 #header-tele {
-    width: 40px;
-    height: 40px;
+    width: 38px;
     transition: all 150ms ease;
     margin-top: 0px;
 }
@@ -1533,9 +1532,8 @@ a {
 
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 30px;
-        width: 30px;
-        margin-top: 0px;
+        
+        width: 29px;
         margin-right: 0px;
     }
     #suggested-title {
@@ -1569,8 +1567,8 @@ a {
     }
 
     #header-tele {
-        margin-top: 0px;
-        margin-right: 1vw;
+        
+        margin-right: 2vw;
     }
 }
 /* Download Button Desing */
