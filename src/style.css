@@ -1530,7 +1530,7 @@ a {
         content: url("/images/icon.svg");
         height: 50px;
         width: 50px;
-        margin-right: 3px;
+        margin-right: 0px;
     }
 
     #header-tele {
