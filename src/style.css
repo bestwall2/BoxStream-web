@@ -125,7 +125,7 @@ a {
     width: 38px;
     height: 38px;
     transition: all 150ms ease;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 #header-logo:hover {
@@ -1536,6 +1536,7 @@ a {
         content: url("/images/telegram.svg");
         width: 29px;
         height: 29px;
+        margin-right: 5px;
     }
     #suggested-title {
         font-size: 1.7rem;
