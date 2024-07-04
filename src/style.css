@@ -115,7 +115,7 @@ a {
 }
 #header-left {
     display: flex;
-    gap: 15px;
+    gap: 8px;
 }
 #header-logo {
     width: 140px;
