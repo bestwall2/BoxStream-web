@@ -1535,9 +1535,9 @@ a {
 
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 33px; /* Match the height of #header-logo */
-        width: auto; /* Automatically adjust the width to maintain the aspect ratio */
-        margin-right: 10px; /* Match the margin-right of #header-logo for consistency */
+        width: 42px;
+        height: 42px;
+        margin-right: 5px; /* Match the margin-right of #header-logo for consistency */
         object-fit: contain; /* Ensure the aspect ratio is maintained */
     }
     #suggested-title {
