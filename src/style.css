@@ -122,7 +122,7 @@ a {
 }
 
 #header-tele {
-    height: 140px; /* Match the height of #header-logo */
+    height: 50px; /* Match the height of #header-logo */
     width: auto; /* Automatically adjust the width to maintain the aspect ratio */
     transition: all 150ms ease;
     margin-top: 8px; /* Match the margin-top of #header-logo for consistency */
@@ -1535,7 +1535,7 @@ a {
 
     #header-tele {
         content: url("/images/telegram.svg");
-        height: 29px; /* Match the height of #header-logo */
+        height: 35px; /* Match the height of #header-logo */
         width: auto; /* Automatically adjust the width to maintain the aspect ratio */
         margin-right: 10px; /* Match the margin-right of #header-logo for consistency */
         object-fit: contain; /* Ensure the aspect ratio is maintained */
