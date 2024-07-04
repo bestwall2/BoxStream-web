@@ -56,13 +56,6 @@ export default function Header() {
             }`}>
             <div id="header-section">
                 <div id="header-left">
-                    <a href="https://t.me/box_stream">
-                        <img
-                            src="/images/telegram.svg"
-                            id="header-tele"
-                            alt="Telegram Channel"
-                        />
-                    </a>
                     <Link to="/">
                         <img
                             src="/images/logo.svg"
