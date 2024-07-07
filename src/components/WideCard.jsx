@@ -12,7 +12,7 @@ export default function WideCard(props) {
 
   return (
       <Link to={`/info/${props.item.type}/${props.item.item.id}`} className="widecard">
-        <img className="widecard-image" src={props.item.item.backdrop_path && `https://image.tmdb.org/t/p/w500/${props.item.item.backdrop_path}`} alt="Backdrop" />
+        <img className="widecard-image" src={props.item.item.backdrop_path && `https://image.tmdb.org/t/p/w500${props.item.item.backdrop_path}`} alt="Backdrop" />
         <div className="widecard-content">
           <button id="watchlist-button" onClick={(event) => removeItem(event, props.item.id)}>
             <i className="fa-light fa-trash-can" style={{fontSize: "18px", color: "#000000"}} alt="Remove" />
