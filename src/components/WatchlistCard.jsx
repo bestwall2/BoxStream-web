@@ -13,7 +13,7 @@ export default function WatchlistCard({ item, type, onRemove }) {
   return (
     <div className="watch-card">
       <Link to={`/info/${type}/${item.id}`} className="watch-card-link">
-        <img className="watch-card-image" src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} alt="Poster" />
+        <img className="watch-card-image" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt="Poster" />
         <div className="watchlist-content">
           <div className="card-play"><i className="fa-solid fa-play" style={{color: "#ffffff", fontSize: "2.5rem"}} alt="Play Icon" /></div>
           <button id="watchlist-button" onClick={(event) => removeItem(event, item.id)}>
