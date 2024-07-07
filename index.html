@@ -15,31 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./src/style.css">
 <link href="https://rawcdn.githack.com/coen-h/test/2adae1e000428ca26e9c13ed57927af92d9542e0/css/all.min.css" rel="stylesheet" type="text/css">
-<script src="https://web-ad-sdk.unityads.unity3d.com/prod/0.0.1/main.js"></script>
-    <script>
-        function initializeUnityAds() {
-            UnityAds.initialize('5643597', 'Interstitial_Android', false, function() {
-                console.log("Unity Ads initialized");
-                showUnityAd(); // Show ad immediately after initialization
-            }, function(error) {
-                console.log("Error initializing Unity Ads:", error);
-            });
-        }
-
-        function showUnityAd() {
-            if (UnityAds.isReady('Interstitial_Android')) {
-                UnityAds.show('Interstitial_Android', function() {
-                    console.log("Ad shown successfully");
-                }, function(error) {
-                    console.log("Error showing ad:", error);
-                });
-            } else {
-                console.log("Ad not ready");
-            }
-        }
-    </script>
 </head>
-<body onload="initializeUnityAds()">
+<body>
 <div id="root"></div>
 <script type="module" src="/src/index.jsx"></script>
 </body>
