@@ -33,7 +33,7 @@ export default function Card(props) {
         <Link to={`/info/${props.type}/${props.item.id}`} className={`card ${isLoaded ? 'loaded' : 'loading'}`} id={props.csize} ref={cardRef}>
             <img
                 className={props.size}
-                src={props.item.poster_path && `https://image.tmdb.org/t/p/w500/${props.item.poster_path}`}
+                src={props.item.poster_path && `https://image.tmdb.org/t/p/w500${props.item.poster_path}`}
                 alt="Poster"
             />
             <div className="card-play">
