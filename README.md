@@ -8,10 +8,9 @@
 
 ## Links:
 > Use an adblocker (uBlock-Origin) to remove player pop-ups
-#### Main Site:
-https://zmov.vercel.app
-#### Mirrors:
-https://watch.coen.ovh 
+### Site
+
+https://BoxStream-web.vercel.com
 
 <br/>
 
