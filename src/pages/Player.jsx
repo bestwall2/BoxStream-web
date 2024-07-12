@@ -21,7 +21,7 @@ export default function Player() {
         XYZ: `https://vidsrc.xyz/embed/${type}/${id}`,
         TWO: `https://www.2embed.cc/embed${type === "tv" ? "tv" : ""}/${id}`,
         SS: `https://player.smashy.stream/${type}/${id}`,
-        BF: `https://www.braflix.ru/${type}/${id}`
+        BF: `https://www.primewire.tf/embed/${type}?imdb=${id}`
     };
 
     const getServerURL = () => {
@@ -34,7 +34,7 @@ export default function Player() {
             } else if (selectedServer === "CLUB") {
                 url += `-${season}-${episode}`;
             } else if (selectedServer === "BF") {
-                url += `/${season}/${episode}?play=true`;
+                url += `&season=${season}&episode=${episode}`;
             } else {
                 url += `/${season}/${episode}`;
             }
@@ -174,7 +174,7 @@ export default function Player() {
                         <option value="XYZ">XYZ</option>
                         <option value="TWO">2EMBED</option>
                         <option value="SS">SMASHY</option>
-                        <option value="BF">BFlix</option>
+                        <option value="BF">America</option>
                     </select>
                     {type === "tv" && season && episode && (
                         <Link to={nextEpisodeLink} id="player-button">
