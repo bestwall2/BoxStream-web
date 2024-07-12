@@ -21,7 +21,7 @@ export default function Player() {
         XYZ: `https://vidsrc.xyz/embed/${type}/${id}`,
         TWO: `https://www.2embed.cc/embed${type === "tv" ? "tv" : ""}/${id}`,
         SS: `https://player.smashy.stream/${type}/${id}`,
-        BF: `https://www.primewire.tf/embed/${type}?imdb=${id}`
+        BF: `https://www.primewire.tf/embed/${type}?tmdb=${id}`
     };
 
     const getServerURL = () => {
